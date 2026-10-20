@@ -1,0 +1,17 @@
+# dbt сгенерированные файлы
+target/
+dbt_packages/
+logs/
+*.log
+
+# Локальные настройки окружения и пароли
+profiles/profiles.yml
+profiles/user.yml
+.env
+
+# Системный мусор
+.DS_Store
+__pycache__/
+*.pyc
+.idea/
+.vscode/

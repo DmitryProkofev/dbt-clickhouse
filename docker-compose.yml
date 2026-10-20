@@ -1,0 +1,10 @@
+services:
+  dbt:
+    build: .
+    working_dir: /usr/app/my_project
+    volumes:
+      - ./profiles:/root/.dbt
+      - ./:/usr/app
+    ports:
+      - "8080:8080"
+    entrypoint: ["dbt"]
